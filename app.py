@@ -13,7 +13,7 @@ app.title = "Global Mineral Dashboard"
 
 # --- 2. Load Data and Define Layout ---
 try:
-    df = pd.read_csv('final 1.csv')
+    df = pd.read_csv('final1.csv')
 
     # --- Data Cleaning and Preparation ---
     df['Year'] = pd.to_numeric(df['Year'], errors='coerce').dropna().astype(int)
@@ -85,7 +85,7 @@ try:
 except FileNotFoundError:
     app.layout = dbc.Container([
         html.H1("Error: Data File Not Found", className="text-danger"),
-        html.P("'final 1.csv' was not found. Please ensure it's in the same directory.")
+        html.P("' 1.csv' was not found. Please ensure it's in the same directory.")
     ], className="p-5 mt-5 bg-light border rounded")
 
 # --- 4. Define Callbacks ---
