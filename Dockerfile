@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 5. Copy your application code and the data file into the container
 #    Note the quotes around "final 1.csv" to handle the space
 COPY app.py .
-COPY "final 1.csv" .
+COPY "final1.csv" .
 
 # 6. Expose the port the app runs on (Dash default is 8050)
 EXPOSE 8050
